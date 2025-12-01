@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>دار الأرقم لتحفيظ القرءان</title>
+	<link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+	<link rel="stylesheet" href="index.css">
+	<script>
+	const form = document.querySelector('form.eee');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  const name = document.getElementById('Name').value;
+  const phone = document.getElementById('number').value;
+  const parentPhone = document.getElementById('number1').value;
+  const birthDate = document.getElementById('date').value;
+  const age = document.getElementById('number2').value;
+  const level = document.getElementById('text').value;
+  const message = document.getElementById('Message').value;
+
+  const subject = 'انضمام الي المدرسة';
+  const body = اسم الدارس: ${name}\nرقم الهاتف: ${phone}\nرقم هاتف ولي الامر: ${parentPhone}\nتاريخ الميلاد: ${birthDate}\nالسن: ${age}\nالمستوي: ${level}\nملاحظات: ${message};
+
+  const url = mailto:abdelrahman4381@gmail.com?subject=${subject}&body=${body};
+
+  window.location.href = url;
+});
+
+	</script>
+</head>
+<body>
+	<header>
+       
+        
+		<nav>
+            <img src="logo.jpg" alt="" width="90px"> 
+	 
+            <h1 class="1">دار الأرقم<sup>لتحفيظ القرءان الكريم</sup></h1>
+			<hr>		
+		</nav>
+	</header><br>
+	<form action="">
+		<fieldset class="ab">
+			<legend class="z">حملة 100 حافظ و حافظه لكتاب الله</legend>
+			<p>
+				بفضل الله أوشكت علي الأنتهاء<br>
+				<span>
+					<u>
+					ولن نبرح حتى نبلغ
+						</u>
+				</span>
+			</p>
+		</fieldset>
+	</form>
+	<hr>
+	<form class="eee" action="https://formsubmit.co/abdelrahman4381@gamil.com" method="post">
+		<fieldset class="ab">
+	<legend>الأنضمام الي المدرسة لعام جديد</legend>
+	    <label for="Name">اسم الدارس</label>
+		<input required id="Name" type="text" placeholder=" أدخل اسمك">
+		<br><br>
+		<label for="number">رقم الهاتف</label>
+		<input required id="number" type="number" placeholder="ادخل رقم الهاتف">
+		<br><br>
+		<label for="number1">رقم هاتف ولي الامر</label>
+		<input required id="number1" type="number" placeholder="ادخل رقم هاتف واي الأمر">
+		<br><br>
+		<label for="date">تاريخ الميلاد</label>
+		<input required id="date" type="date">
+		<br><br>
+		<label for="number2">السن</label>
+		<input required id="number2" type="number" placeholder="ادخل سنك">
+		<br><br>
+		<label for="text">المستوي</label>
+		<input required id="text" type="text" placeholder="ادخل المستوي">
+		<br><br>
+		<label for="checkbox">اذا أردت الانضمام الي المدرسة فانت توافق علي كل القواعد</label>
+    	<input required id="checkbox" type="checkbox" >
+		<br><br>
+		<label for="Message"><u>ملاحظاتك</u></label><br>
+		<textarea class="d" placeholder="Enter your Message" id="Message" cols="180" rows="10">
+		</textarea>
+		<br>
+<input class="c" type="submit" value="ارسال">
+<input class="c" type="reset" value="مسح">
+</fieldset>
+	</form>
+	</form>
+	
+</body>
+ 
+
+</html>
